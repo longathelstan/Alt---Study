@@ -1,0 +1,52 @@
+.hotbar-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.hotbar-container1 {
+  width: 1166px;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  border-color: #E2E8F0;
+  border-style: solid;
+  border-width: 1px;
+  justify-content: flex-end;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+.hotbar-container2 {
+  width: 170px;
+  height: 62px;
+}
+.hotbar-container3 {
+  display: contents;
+}
+.hotbar-icon {
+  fill: #475569;
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.hotbar-icon:hover {
+  fill: var(--dl-color-gray-white);
+  width: 30px;
+  height: auto;
+}
+.hotbar-icon2 {
+  fill: #475569;
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+}
+.hotbar-icon2:hover {
+  fill: var(--dl-color-gray-white);
+  width: 30px;
+  height: auto;
+}

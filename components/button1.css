@@ -1,0 +1,87 @@
+.button1-container {
+  width: 80px;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.button1-navlink {
+  display: contents;
+}
+.button1-icon {
+  fill: #38A1BF;
+  flex: 1;
+  width: 24px;
+  align-self: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.button1-icon:hover {
+  fill: #ffffff;
+  width: 49px;
+  height: 91px;
+  padding-top: 0px;
+}
+.button1-navlink1 {
+  display: contents;
+}
+.button1-icon2 {
+  fill: #38A1BF;
+  flex: 1;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.button1-icon2:hover {
+  fill: #ffffff;
+  width: 49px;
+  height: 91px;
+  padding-top: 0px;
+  border-radius: 50px;
+}
+.button1-navlink2 {
+  display: contents;
+}
+.button1-icon4 {
+  fill: #38A1BF;
+  flex: 1;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.button1-icon4:hover {
+  fill: var(--dl-color-gray-white);
+  width: 49px;
+}
+.button1-navlink3 {
+  display: contents;
+}
+.button1-icon6 {
+  fill: #38A1BF;
+  flex: 1;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.button1-icon6:hover {
+  fill: var(--dl-color-gray-white);
+  width: 49px;
+}
+
+
+
+
+
+
+
+
+
+

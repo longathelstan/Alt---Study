@@ -1,0 +1,43 @@
+.vietjack-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.vietjack-main {
+  flex: 0 0 auto;
+  width: 1280px;
+  height: 720px;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.vietjack-navlink {
+  display: contents;
+}
+.vietjack-icon {
+  fill: #E7EFF3;
+  width: 36px;
+  height: 36px;
+  margin-top: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  margin-left: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.vietjack-icon:hover {
+  fill: #4F7D96;
+}
+.vietjack-container1 {
+  top: var(--dl-space-space-threeunits);
+  left: var(--dl-space-space-unit);
+  width: 1180px;
+  position: absolute;
+  align-self: center;
+}
+.vietjack-container2 {
+  display: contents;
+}

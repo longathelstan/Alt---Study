@@ -1,0 +1,62 @@
+.exam-button-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.exam-button-navlink {
+  display: contents;
+}
+.exam-button-icon {
+  fill: var(--dl-color-gray-white);
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  margin-bottom: 38px;
+  text-decoration: none;
+}
+.exam-button-icon:active {
+  fill: #475569;
+}
+.exam-button-navlink1 {
+  display: contents;
+}
+.exam-button-icon2 {
+  fill: var(--dl-color-gray-white);
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  margin-bottom: 38px;
+  text-decoration: none;
+}
+.exam-button-icon2:active {
+  fill: #475569;
+}
+.exam-button-navlink2 {
+  display: contents;
+}
+.exam-button-icon4 {
+  fill: var(--dl-color-gray-white);
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.exam-button-icon4:active {
+  fill: #475569;
+}
+.exam-button-root-class-name {
+  margin-top: 42px;
+  margin-left: var(--dl-space-space-halfunit);
+}
+.exam-button-root-class-name1 {
+  margin-top: 42px;
+  margin-left: var(--dl-space-space-halfunit);
+}
+.exam-button-root-class-name2 {
+  margin-top: 42px;
+  margin-left: var(--dl-space-space-halfunit);
+}

@@ -1,0 +1,28 @@
+.feature-card11-feature-card {
+  width: 327px;
+  height: 208px;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  transition: 0.3s;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.feature-card11-feature-card:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 20px 1px #38a1bf;
+}
+.feature-card11-text {
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.feature-card11-image {
+  width: 101px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius4);
+}
+.feature-card11-root-class-name {
+  width: 230px;
+}

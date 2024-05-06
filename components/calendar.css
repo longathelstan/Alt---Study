@@ -1,0 +1,24 @@
+.calendar-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.calendar-icon {
+  fill: var(--dl-color-gray-white);
+  width: 24px;
+  height: 24px;
+}
+.calendar-icon2 {
+  fill: var(--dl-color-gray-700);
+  width: 24px;
+  height: 24px;
+}
+.calendar-icon4 {
+  fill: var(--dl-color-gray-white);
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,133 @@
+.joinroom-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.joinroom-container1 {
+  flex: 0 0 auto;
+  width: 1280px;
+  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.joinroom-container2 {
+  flex: 0 0 auto;
+  width: 570px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
+}
+.joinroom-image {
+  top: var(--dl-space-space-twounits);
+  left: var(--dl-space-space-twounits);
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+  position: absolute;
+  object-fit: cover;
+}
+.joinroom-text {
+  top: 40px;
+  left: var(--dl-space-space-sixunits);
+  position: absolute;
+  font-size: 30px;
+}
+.joinroom-textinput {
+  top: 127px;
+  left: 53px;
+  width: 340px;
+  height: 65px;
+  position: absolute;
+  font-size: 18px;
+  transition: 0.3s;
+  border-color: #E7EFF3;
+  border-width: 3px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 20px;
+}
+.joinroom-textinput:hover {
+  border-color: #38A1BF;
+}
+.joinroom-textinput1 {
+  top: 224px;
+  left: 53px;
+  width: 340px;
+  height: 65px;
+  position: absolute;
+  font-size: 18px;
+  transition: 0.3s;
+  border-color: #E7EFF3;
+  border-width: 3px;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 20px;
+}
+.joinroom-textinput1:hover {
+  border-color: #38A1BF;
+}
+.joinroom-text1 {
+  top: 341px;
+  left: 76px;
+  position: absolute;
+  font-size: 14px;
+}
+.joinroom-text2 {
+  top: 383px;
+  left: 76px;
+  position: absolute;
+  font-size: 14px;
+}
+.joinroom-checkbox {
+  top: 340px;
+  left: 53px;
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  position: absolute;
+  border-radius: 10px;
+}
+.joinroom-checkbox1 {
+  top: 381px;
+  left: 53px;
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  position: absolute;
+  border-radius: 10px;
+}
+.joinroom-button {
+  color: var(--dl-color-gray-white);
+  right: 30px;
+  width: 115px;
+  bottom: 29px;
+  height: auto;
+  position: absolute;
+  transition: 0.3s;
+  border-color: #00CBFF;
+  border-radius: 16px;
+  background-color: #00cbff;
+}
+.joinroom-button:hover {
+  border-color: #009bff;
+  background-color: #009bff;
+}
+.joinroom-navlink {
+  color: var(--dl-color-gray-black);
+  right: 170px;
+  width: 115px;
+  bottom: 29px;
+  height: auto;
+  position: absolute;
+  transition: 0.3s;
+  border-color: var(--dl-color-gray-black);
+  border-radius: 16px;
+  text-decoration: none;
+  background-color: transparent;
+}
+.joinroom-navlink:hover {
+  background-color: var(--dl-color-gray-900);
+}

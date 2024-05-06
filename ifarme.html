@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ifarme - Alt - Study</title>
+    <title>Beautiful Widget Clock by LongAtheltsan</title>
+    <meta property="og:title" content="Ifarme - Alt - Study" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Comfortaa;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/alt-study1.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <style data-section-id="dropdown">
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./ifarme.css" rel="stylesheet" />
+
+      <div class="ifarme-container">
+        <div class="ifarme-container1">
+          <div class="ifarme-container2">
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            />
+
+            <style>
+              @font-face {
+                font-family: 'Predige Rounded Regular';
+                src: url('path/to/PredigeRounded-Regular.ttf');
+              }
+
+              @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap'); /* Import Comfortaa font */
+
+              body {
+                background-color: transparent;
+                text-align: center;
+                color: #f9c942;
+                font-family: 'Comfortaa', Arial, sans-serif; /* Set Comfortaa as the font-family */
+                margin: 0;
+                padding: 0;
+              }
+
+              .widget {
+                display: inline-block;
+                padding: 20px;
+                background-color: transparent;
+                border-radius: 20px;
+                width: 200px;
+              }
+
+              .clock {
+                font-size: 36px;
+                margin-top: 10px;
+                transition: color 0.5s;
+              }
+
+              .calendar {
+                font-size: 18px;
+                margin-top: 10px;
+              }
+
+              /* Additional styles for dark mode */
+              body.dark-mode {
+                background-color: transparent;
+                color: #f9c942;
+              }
+
+              .widget.dark-mode {
+                background-color: transparent;
+              }
+
+              .clock.dark-mode {
+                color: #A6A6CA;
+              }
+
+              .calendar.dark-mode {
+                color: #A6A6CA;
+              }
+
+              .icon {
+                display: inline-block;
+                font-size: 24px;
+                margin-right: 5px;
+              }
+            </style>
+
+            <div class="widget" id="widget">
+              <div>
+                <span id="icon" class="icon"></span>
+                <div class="calendar" id="calendar"></div>
+              </div>
+              <div class="clock" id="clock"></div>
+            </div>
+
+            <script>
+              function updateClock() {
+                var now = new Date();
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var day = now.toLocaleString('default', { weekday: 'short' });
+                var date = now.getDate();
+                var month = now.toLocaleString('default', { month: 'long' });
+
+                // Add leading zeros if necessary
+                hours = ('0' + hours).slice(-2);
+                minutes = ('0' + minutes).slice(-2);
+
+                var timeString = hours + ':' + minutes;
+                var dateString = day + ', ' + month + ' ' + date;
+
+                document.getElementById('clock').textContent = timeString;
+                document.getElementById('calendar').textContent = dateString;
+
+                // Check if it's night time (you can adjust the time range as needed)
+                var isNight = hours >= 19 || hours <= 6;
+
+                // Apply dark mode styles if it's night time
+                var widgetElement = document.getElementById('widget');
+                var clockElement = document.getElementById('clock');
+                var calendarElement = document.getElementById('calendar');
+                var iconElement = document.getElementById('icon');
+
+                if (isNight) {
+                  widgetElement.classList.add('dark-mode');
+                  clockElement.classList.add('dark-mode');
+                  calendarElement.classList.add('dark-mode');
+                  iconElement.classList.add('fas', 'fa-moon');
+                } else {
+                  widgetElement.classList.remove('dark-mode');
+                  clockElement.classList.remove('dark-mode');
+                  calendarElement.classList.remove('dark-mode');
+                  iconElement.classList.add('fas', 'fa-sun');
+                }
+              }
+
+              // Update the clock initially and then every minute
+              updateClock();
+              setInterval(updateClock, 60000);
+            </script>
+          </div>
+        </div>
+        <div class="ifarme-blog-post-card">
+          <div class="ifarme-container3">
+            <h1 class="ifarme-text">Nhập ID bài tập</h1>
+            <input
+              type="text"
+              placeholder="ID : "
+              class="ifarme-textinput input"
+            />
+            <div class="ifarme-container4">
+              <svg viewBox="0 0 1024 1024" class="ifarme-icon">
+                <path
+                  d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531zM341.333 554.667h238.336l-97.835 97.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l170.667-170.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-170.667-170.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l97.835 97.835h-238.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="header"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var inputValue = document.querySelector('.ifarme-textinput');
+  var additionalText = "/edit?usp=sharing";
+  var joinButton = document.querySelector('.ifarme-icon');
+
+  if (inputValue) {
+    joinButton.addEventListener('click', function() {
+      var id = inputValue.value;
+      var combinedUrl = 'https://docs.google.com/document/d/' + id + additionalText;
+      console.log('ID:', id);
+      console.log('URL:', combinedUrl);
+      //window.location.href = combinedUrl;
+      window.open(combinedUrl, '_blank');
+    });
+  } else {
+    console.error('Không tìm thấy phần tử input với class "ifarme-textinput"');
+  }
+});
+    </script>
+  </body>
+</html>

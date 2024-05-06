@@ -1,0 +1,45 @@
+.tranlaster-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F5F5F5;
+}
+.tranlaster-container1 {
+  flex: 0 0 auto;
+  width: 1280px;
+  height: 720px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F5F5;
+}
+.tranlaster-container2 {
+  width: 1200px;
+  height: 618px;
+  padding-top: 41px;
+  border-radius: 10px;
+}
+.tranlaster-container3 {
+  display: contents;
+}
+.tranlaster-navlink {
+  display: contents;
+}
+.tranlaster-icon {
+  top: 51px;
+  fill: #E7EFF3;
+  left: 60px;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.tranlaster-icon:hover {
+  fill: #4F7D96;
+}
